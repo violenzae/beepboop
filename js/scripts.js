@@ -4,10 +4,6 @@ $(document).ready(function(){
   var input = parseInt($("#num").val());
   var array = [];
   var updown = parseInt($("input:radio[name=updown]:checked").val());
-
-
-  console.log(input); //just checking :(
-    console.log(array); //arrgh :::(())
   
   $("#output").empty();
   $("#gear").hide();
@@ -47,8 +43,8 @@ function goDown(input) {
 }
 
 
-  array.forEach(function(val){
-    $("#output").append('<li>' + val + '</li>');
+  array.forEach(function(item){
+    $("#output").append('<li>' + item + '</li>');
   });
 
   });
