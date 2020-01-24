@@ -11,6 +11,8 @@ $(document).ready(function(){
       output.push("I'm sorry Dave, I can't do that.")
     } else if (i.toString().includes("2")){
       output.push("Boop!")
+    } else if (i.toString().includes("1")){
+      output.push("Beep!")
     } else {
     output.push(i)
   }
