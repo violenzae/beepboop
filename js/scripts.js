@@ -19,11 +19,10 @@ $(document).ready(function(){
     array.push(i.toString())
     }
   }
-
-  $("#output").each(function (index) {
-    $(this).text(array[index]);
+  
+  array.forEach(function(val){
+    $("#output").append('<li>' + val + '</li>');
   });
-
 
   });
 });
