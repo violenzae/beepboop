@@ -4,8 +4,18 @@ $(document).ready(function(){
   var input = parseInt($("#num").val());
   var output = [];
 
+  console.log(input); //just checking :(
 
-  $("#output").append(input);
+  for(i=0; i <= input; i++){
+    if(i.toString().includes("3")) {
+      output.push("I'm sorry Dave, I can't do that.")
+    }
+  else {
+    output.push(i)
+  }
+  }
+
+  $("#output").append(output);
 
 
   });
