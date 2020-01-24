@@ -2,23 +2,27 @@ $(document).ready(function(){
   $("form#beepboop").submit(function(event){
   event.preventDefault();    
   var input = parseInt($("#num").val());
-  var output = [];
+  var array = [];
+
 
   console.log(input); //just checking :(
+    console.log(array); //arrgh :::(())
 
   for(i=0; i <= input; i++){
     if(i.toString().includes("3")) {
-      output.push("I'm sorry Dave, I can't do that.")
+      array.push("I'm sorry, Dave. I'm afraid I can't do that.")
     } else if (i.toString().includes("2")){
-      output.push("Boop!")
+      array.push("Boop!")
     } else if (i.toString().includes("1")){
-      output.push("Beep!")
+      array.push("Beep!")
     } else {
-    output.push(i)
-  }
+    array.push(i.toString())
+    }
   }
 
-  $("#output").append(output);
+  $("#output").each(function (index) {
+    $(this).text(array[index]);
+  });
 
 
   });
