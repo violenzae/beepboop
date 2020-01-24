@@ -25,6 +25,14 @@ body {
   height: auto;
 }
 
+#homer {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: auto;
+}
+
 
 #gear {
 display: block;
