@@ -1,0 +1,12 @@
+body {
+  background-color: lightblue;
+}
+
+.panel {
+  margin-top: 10%;
+  margin-left: auto;
+}
+
+img {
+  display: block;
+}

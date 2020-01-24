@@ -8,7 +8,7 @@ $(document).ready(function(){
   console.log(input); //just checking :(
     console.log(array); //arrgh :::(())
   
-    $("#output").empty();
+  $("#output").empty();
 
   for(i=0; i <= input; i++){
     if(i.toString().includes("3")) {
