@@ -10,6 +10,7 @@ $(document).ready(function(){
     console.log(array); //arrgh :::(())
   
   $("#output").empty();
+  $("#gear").hide();
 
   if (updown == 0) {
     goUp(input);
