@@ -9,8 +9,9 @@ $(document).ready(function(){
   for(i=0; i <= input; i++){
     if(i.toString().includes("3")) {
       output.push("I'm sorry Dave, I can't do that.")
-    }
-  else {
+    } else if (i.toString().includes("2")){
+      output.push("Boop!")
+    } else {
     output.push(i)
   }
   }
